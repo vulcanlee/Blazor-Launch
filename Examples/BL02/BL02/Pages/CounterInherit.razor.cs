@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 
-namespace BLA2.Pages
+namespace BL02.Pages
 {
     public class CounterInheritBase : ComponentBase
     {

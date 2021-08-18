@@ -1,5 +1,5 @@
-using BLA2.Data;
-using BLA2.Pages;
+using BL02.Data;
+using BL02.Pages;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BLA2
+namespace BL02
 {
     public class Startup
     {

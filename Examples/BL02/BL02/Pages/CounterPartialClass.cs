@@ -1,4 +1,4 @@
-﻿namespace BLA2.Pages
+﻿namespace BL02.Pages
 {
     public partial class CounterPartialClass
     {
