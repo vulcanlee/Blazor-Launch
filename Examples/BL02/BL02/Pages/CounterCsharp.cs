@@ -1,4 +1,4 @@
-﻿namespace BL02.Pages
+﻿namespace BLA2.Pages
 {
     public partial class CounterCsharp : Microsoft.AspNetCore.Components.ComponentBase
     {

@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "BL02": {
+    "BLA2": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
