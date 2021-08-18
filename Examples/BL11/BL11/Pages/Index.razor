@@ -1,0 +1,22 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<h1>Hello, 頁面導航!</h1>
+
+<button class="btn btn-primary" @onclick="OnCounter">
+    計數器
+</button>
+<button class="btn btn-primary" @onclick="OnForecast">
+    天氣預報
+</button>
+
+@code{
+    void OnCounter()
+    {
+        NavigationManager.NavigateTo("Counter");
+    }
+    void OnForecast()
+    {
+        NavigationManager.NavigateTo("fetchdata");
+    }
+}
