@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using bzStateHasChanged.Data;
+using BL06.Data;
 
-namespace bzStateHasChanged
+namespace BL06
 {
     public class Startup
     {

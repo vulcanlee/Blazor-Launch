@@ -1,6 +1,6 @@
 using System;
 
-namespace bzStateHasChanged.Data
+namespace BL06.Data
 {
     public class WeatherForecast
     {
