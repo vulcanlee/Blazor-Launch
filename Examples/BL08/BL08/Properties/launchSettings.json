@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "BS06": {
+    "BL08": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
