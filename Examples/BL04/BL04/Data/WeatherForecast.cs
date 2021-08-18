@@ -1,6 +1,6 @@
 using System;
 
-namespace BS02.Data
+namespace BL04.Data
 {
     public class WeatherForecast
     {

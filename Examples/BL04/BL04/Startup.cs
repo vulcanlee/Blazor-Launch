@@ -1,4 +1,4 @@
-using BS02.Data;
+using BL04.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BS02
+namespace BL04
 {
     public class Startup
     {
