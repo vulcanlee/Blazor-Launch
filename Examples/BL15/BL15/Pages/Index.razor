@@ -1,0 +1,78 @@
+﻿@page "/"
+
+<h1>Hello, Razor 使用範例!</h1>
+
+<h1>Razor 語法</h1>
+<p>@Username</p>
+<p>@@Username</p>
+<a href="mailto:Support@contoso.com">Support@contoso.com</a>
+
+<h1>Razor 隱含運算式</h1>
+<p>@DateTime.Now</p>
+<p>@DateTime.IsLeapYear(2016)</p>
+
+<h1>Razor 明確運算式</h1>
+<p>Last week this time: @(DateTime.Now - TimeSpan.FromDays(7))</p>
+<p>Last week: @DateTime.Now - TimeSpan.FromDays(7)</p>
+@{
+    var joe = new Person("Joe", 33);
+}
+<p>Age@joe.Age</p>
+<p>Age@(joe.Age)</p>
+
+<h1>Razor 運算式編碼</h1>
+@("<span>Hello World</span>")
+
+<h1>Razor 程式碼區塊 - 隱含轉換</h1>
+@{
+    void RenderName(string name)
+    {
+        <p>Name: <strong>@name</strong></p>
+    }
+    RenderName("Mahatma Gandhi");
+    RenderName("Martin Luther King, Jr.");
+}
+@{
+    var inCSharp = true;
+    <p>Now in HTML, was in C# @inCSharp</p>
+}
+
+<h1>Razor 明確分隔的轉換</h1>
+<div>
+    @for (var i = 0; i < People.Count; i++)
+    {
+        var person = People[i];
+        <text>Name: @person.Name</text>
+    }
+</div>
+
+<h1>Razor 控制結構</h1>
+@if (value % 2 == 0)
+{
+    <p>The value was even.</p>
+}
+
+
+
+@*Razor 程式碼區塊*@
+@code {
+    public string Username { get; set; } = "Vulcan Lee";
+    int value = 7;
+    public class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public Person(string name, int age)
+        {
+            Name = name;
+            Age = age;
+        }
+    }
+    public List<Person> People { get; set; } = new List<Person>()
+{
+        new Person("A1",22),
+        new Person("B2",22),
+        new Person("C3",22),
+        new Person("D4",22),
+    };
+}
