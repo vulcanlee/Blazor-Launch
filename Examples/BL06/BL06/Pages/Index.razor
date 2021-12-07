@@ -19,6 +19,7 @@
             {
                 await Task.Delay(2000);
                 message = $"計數器數值 : {++counter}";
+                Console.WriteLine(DateTime.Now);
                 await InvokeAsync(() =>
                 {
                     StateHasChanged();
